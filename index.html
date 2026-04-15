@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunter Hurst | Hobbies & Data</title>
+    <style>
+        /* --- CORE STYLING --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: #0B172A; 
+            color: #E2E8F0; 
+            text-align: center;
+            line-height: 1.6;
+            font-size: 18px; 
+        }
+
+        /* --- NAVIGATION --- */
+        .header { padding: 40px 20px; background: #0F172A; border-bottom: 2px solid #1E293B; }
+        .header h1 { font-size: 42px; color: #F8FAFC; text-transform: uppercase; letter-spacing: 4px; font-weight: 900; }
+
+        nav { background: #16243d; padding: 15px; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #1E293B; }
+        nav a { color: #94A3B8; text-decoration: none; margin: 0 20px; font-weight: 700; font-size: 18px; transition: 0.3s; }
+        nav a:hover { color: #3B82F6; }
+
+        /* --- CONTENT CONTAINERS --- */
+        .mainbody { padding: 50px 20px; max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+        
+        .section-title { font-size: 48px; margin-bottom: 50px; font-weight: 900; color: #F8FAFC; font-style: italic; }
+
+        .content-card { 
+            margin-bottom: 60px; 
+            width: 100%;
+            background: #111d2f; 
+            padding: 40px; 
+            border-radius: 24px;
+            border: 1px solid #1E293B;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* --- TEXT & MEDIA --- */
+        .hobby-name { font-size: 32px; margin-bottom: 20px; color: #F1F5F9; font-weight: 800; }
+        .number { color: #3B82F6; }
+
+        img { width: 100%; height: auto; border-radius: 12px; margin-bottom: 30px; border: 3px solid #1E293B; }
+
+        .details-box p { font-size: 24px; font-weight: 700; color: #F8FAFC; margin-bottom: 15px; }
+
+        /* --- BULLET FIX --- */
+        .bullet-list { display: inline-block; text-align: left; }
+        ul { list-style: none; padding: 0; margin: 0; }
+        ul li { font-size: 18px; color: #94A3B8; margin-bottom: 10px; padding-left: 25px; position: relative; }
+        ul li::before { content: "•"; color: #3B82F6; position: absolute; left: 0; font-weight: bold; }
+
+        /* --- VIDEO & TABLEAU --- */
+        .video-wrapper {
+            width: 100%;
+            margin-top: 30px;
+            aspect-ratio: 16 / 9;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 3px solid #1E293B;
+        }
+        .video-wrapper iframe { width: 100%; height: 100%; border: none; }
+
+        .tableau-wrapper {
+            width: 100%;
+            margin-top: 30px;
+            background: #0F172A;
+            padding: 15px;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .back-to-top { color: #3B82F6; text-decoration: none; font-weight: 700; font-size: 16px; margin-top: 40px; text-transform: uppercase; }
+        .footer { padding: 60px; color: #64748B; font-size: 16px; border-top: 1px solid #1E293B; }
+    </style>
+</head>
+<body>
+
+    <div id="top" class="header">
+        <h1>Hunter Hurst</h1>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="ai.html">Snake Game</a>
+    </nav>
+
+    <div class="mainbody">
+        <h2 class="section-title">Hobbies & Insights</h2>
+        
+        <div class="content-card">
+            <img src="assets/img/sports.JPG" alt="Watching Sports">
+            <h3 class="hobby-name"><span class="number">1.</span> Watching Sports</h3>
+            <div class="details-box">
+                <p>Teams I Follow:</p>
+                <div class="bullet-list">
+                    <ul>
+                        <li>Seattle Seahawks</li>
+                        <li>Utah Jazz</li>
+                        <li>Seattle Mariners</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/XeX3r8j66Qk" title="YouTube video player" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <img src="assets/img/cookingpt2.jpg" alt="Cooking Tasty Meals">
+            <h3 class="hobby-name"><span class="number">2.</span> Cooking Tasty Meals</h3>
+            <div class="details-box">
+                <p>Favorite Things to Make:</p>
+                <div class="bullet-list">
+                    <ul>
+                        <li>Gourmet Pasta</li>
+                        <li>Seared Steak</li>
+                        <li>Seasoned Meats</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <img src="assets/img/spikeball.JPG" alt="Playing Spikeball">
+            <h3 class="hobby-name"><span class="number">3.</span> Playing Spikeball</h3>
+            <div class="details-box">
+                <p>Top Locations:</p>
+                <div class="bullet-list">
+                    <ul>
+                        <li>At the beach</li>
+                        <li>At local parks</li>
+                        <li>In my parent's backyard</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h3 class="hobby-name">Data Visualization</h3>
+            <p style="color: #94A3B8; font-weight: 700;">Interactive Spikeball Analysis</p>
+            <div class="tableau-wrapper">
+                <div class='tableauPlaceholder' id='viz1776200271213' style='position: relative; margin: 0 auto;'>
+                    <object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='name' value='spikeball_mobile&#47;Dashboard1' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sp&#47;spikeball_mobile&#47;Dashboard1&#47;1.png' /> 
+                    </object>
+                </div>                
+                <script type='text/javascript'>                    
+                    var divElement = document.getElementById('viz1776200271213');                    
+                    var vizElement = divElement.getElementsByTagName('object')[0];                    
+                    vizElement.style.width='100%';vizElement.style.height='600px';
+                    var scriptElement = document.createElement('script');                    
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                </script>
+            </div>
+        </div>
+
+        <a href="#top" class="back-to-top">↑ Return to Top</a>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Hunter Hurst | BYU Marriott School of Business
+    </div>
+
+</body>
+</html>
